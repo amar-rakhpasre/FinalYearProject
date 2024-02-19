@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FinalYearProject</string>
+    <string name="username_hint">Username</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_now">LOGIN NOW</string>
+</resources>
