@@ -3,10 +3,12 @@ package com.example.atvmapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.Spinner
+import androidx.core.view.get
 
 class MainActivity : AppCompatActivity() {
 
@@ -438,11 +440,52 @@ class MainActivity : AppCompatActivity() {
         val spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, searchsource)
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = spinnerAdapter
+
+        // spinner items selected store in a variable
+     /*   spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parentView: AdapterView<*>?,
+                selectedItemView: android.view.View?,
+                position: Int,
+                id: Long
+            ) {
+                // Item selected from the Spinner
+                val selectedItem = spinner[position]
+                // Do something with the selected item
+                // For example, you can store it in a variable (selectedItem)
+            }
+
+            override fun onNothingSelected(parentView: AdapterView<*>?) {
+                // Handle the case where nothing is selected (optional)
+            }
+        }
+*/
+        // spinner 2 item selected
         val spinnerAdapter1 = ArrayAdapter(this, android.R.layout.simple_spinner_item, items1)
         spinnerAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner1.adapter = spinnerAdapter1
 
+       /* spinner1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parentView: AdapterView<*>?,
+                selectedItemView: android.view.View?,
+                position: Int,
+                id: Long
+            ) {
+                // Item selected from the Spinner
+                val selecteditem1 = spinner1[position]
+                // Do something with the selected item
+                // For example, you can store it in a variable (selectedItem)
+            }
+
+            override fun onNothingSelected(parentView: AdapterView<*>?) {
+                // Handle the case where nothing is selected (optional)
+            }
+        }*/
+
+
         // Create ArrayAdapter with your data for AutoCompleteTextView
+        // search bar
         val autoCompleteAdapter = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, searchsource)
         autoCompleteTextView.setAdapter(autoCompleteAdapter)
          val autoCompleteAdapter1 = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, items1)
@@ -457,10 +500,11 @@ class MainActivity : AppCompatActivity() {
          }
 
         //buttons
-
+        val a = "50 INR"
         val pay : Button=findViewById(R.id.pay)
         pay.setOnClickListener{
             val intent1=Intent(this,Payment::class.java)
+            intent.putExtra("keyName",a )
             startActivity(intent1)
         }
 
