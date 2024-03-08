@@ -12,9 +12,14 @@ import android.os.Bundle;
 import com.example.finalyearproject.R;
 import com.example.finalyearproject.databinding.ActivityHomePageBinding;
 
-public class HomePage_Activity extends AppCompatActivity  {
+interface FragmentNavigationListener {
+    void navigateTo(Fragment fragment);
+}
+
+public class HomePage_Activity extends AppCompatActivity implements FragmentNavigationListener {
 
     ActivityHomePageBinding binding;
+
     @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,29 +27,29 @@ public class HomePage_Activity extends AppCompatActivity  {
         binding = ActivityHomePageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        replaceFragment(new HomeFragment());
         binding.bottomNavigationView.setBackground(null);
-
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId(); // Get the ID once
 
             if (itemId == R.id.navHome) {
-                replaceFragment(new HomeFragment());
+                navigateTo(new HomeFragment());
             } else if (itemId == R.id.navBooking) {
-                replaceFragment(new MyBookingFragment());
+                navigateTo(new MyBookingFragment());
             } else if (itemId == R.id.navVoiceCommand) {
-                replaceFragment(new VoiceCommandFragment());
+                navigateTo(new VoiceCommandFragment());
             } else if (itemId == R.id.navInBox) {
-                replaceFragment(new InboxFragment());
+                navigateTo(new InboxFragment());
             } else if (itemId == R.id.navProfile) {
-                replaceFragment(new ProfileFragment());
+                navigateTo(new ProfileFragment());
             }
             return true;
         });
 
+        // Initially, replace with HomeFragment
+        navigateTo(new HomeFragment());
     }
 
-    private void replaceFragment(Fragment fragment) {
+    public void navigateTo(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_layout, fragment);

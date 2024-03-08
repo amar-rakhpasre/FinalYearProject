@@ -9,40 +9,37 @@
     tools:context=".java.HomePage_Activity">
 
     <FrameLayout
+        android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/frame_layout"/>
+        android:layout_height="match_parent" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bottomAppBar"
         android:layout_gravity="bottom"
         app:fabCradleMargin="10dp"
-        android:backgroundTint="@color/white"
-        app:fabCradleRoundedCornerRadius="50dp">
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:backgroundTint="@color/white">
 
-
-     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@android:color/transparent"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_menu"/>
-
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@android:color/transparent"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu" />
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:backgroundTint="@color/white"
         android:src="@drawable/baseline_settings_voice_24"
-        app:layout_anchor="@+id/bottomAppBar"
+        app:layout_anchor="@id/bottomAppBar"
         app:tint="@color/lavender"
+        android:background="@color/white"
         app:maxImageSize="40dp"
         android:contentDescription="@string/todo2" />
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

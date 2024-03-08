@@ -27,7 +27,7 @@ public class Login_Activity extends AppCompatActivity {
         setContentView(binding.getRoot());
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
-        Intent nextHomepage = new Intent(Login_Activity.this, HomeScreen.class);
+        Intent nextHomepage = new Intent(Login_Activity.this, HomePage_Activity.class);
 
         binding.login.setOnClickListener(new View.OnClickListener() {
             @Override
