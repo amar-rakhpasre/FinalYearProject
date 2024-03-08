@@ -23,7 +23,7 @@ public class WallcomeActivity01 extends AppCompatActivity {
                 startActivity(nextLog);
                 finish();
             }
-        },4000);
+        },3000);
 
     }
 }

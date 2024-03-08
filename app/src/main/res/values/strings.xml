@@ -6,4 +6,18 @@
     <string name="password_hint">Password</string>
     <string name="sign_up">Sign Up</string>
     <string name="login_now">LOGIN NOW</string>
+    <string name="home">Home</string>
+    <string name="Booking">Booking</string>
+    <string name="Inbox">Inbox</string>
+    <string name="Profile">Profile</string>
+    <string name="VoiceBooKing">Voice BooKing</string>
+    <string name="todo">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Homepage">Home Page (dashbord)</string>
+    <string name="voice_booking">Voice BooKing</string>
+    <string name="MyBooking">My Booking</string>
+    <string name="MyProfile">My Profile</string>
+    <string name="VoiceCommand">Voice Command</string>
+    <string name="MyInbox">My Inbox</string>
+    <string name="todo2">TODO</string>
 </resources>
