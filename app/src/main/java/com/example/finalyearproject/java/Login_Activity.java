@@ -27,6 +27,7 @@ public class Login_Activity extends AppCompatActivity {
         setContentView(binding.getRoot());
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
+        Intent nextHomepage = new Intent(Login_Activity.this, HomeScreen.class);
 
         binding.login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +40,9 @@ public class Login_Activity extends AppCompatActivity {
                             @Override
                             public void onSuccess(AuthResult authResult) {
                                 progressDialog.cancel();
-                                Toast.makeText(Login_Activity.this, "Login succesfull", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Login_Activity.this, "Login successful", Toast.LENGTH_SHORT).show();
+                                startActivity(nextHomepage);
+                                finish();
                             }
                         })
                         .addOnFailureListener(new OnFailureListener() {
@@ -78,7 +81,7 @@ public class Login_Activity extends AppCompatActivity {
         binding.goToSignUpActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Login_Activity.this,Register_Activity.class));
+                startActivity(new Intent(Login_Activity.this, Register_Activity.class));
             }
         });
     }
