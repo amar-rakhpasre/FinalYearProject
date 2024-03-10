@@ -34,7 +34,7 @@ public class HomePage_Activity extends AppCompatActivity implements FragmentNavi
             if (itemId == R.id.navHome) {
                 navigateTo(new HomeFragment());
             } else if (itemId == R.id.navBooking) {
-                navigateTo(new MyBookingFragment());
+                navigateTo(new BookingHistoryFragment());
             } else if (itemId == R.id.navVoiceCommand) {
                 navigateTo(new VoiceCommandFragment());
             } else if (itemId == R.id.navInBox) {

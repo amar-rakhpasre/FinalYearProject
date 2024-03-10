@@ -24,16 +24,16 @@
 
         </activity>
         <activity
-            android:name=".java.ForgotPassword_Activity"
+            android:name=".java.Login_Activity"
             android:exported="false" />
         <activity
-            android:name=".java.HomePage_Activity"
+            android:name=".java.ForgotPassword_Activity"
             android:exported="false" />
         <activity
             android:name=".java.Register_Activity"
             android:exported="false" />
         <activity
-            android:name=".java.Login_Activity"
+            android:name=".java.HomePage_Activity"
             android:exported="false" />
         <activity
             android:name=".java.MainActivity"
