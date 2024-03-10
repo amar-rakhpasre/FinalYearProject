@@ -7,7 +7,7 @@
     <string name="sign_up">Sign Up</string>
     <string name="login_now">LOGIN NOW</string>
     <string name="home">Home</string>
-    <string name="Booking">Booking</string>
+    <string name="Booking">B...History</string>
     <string name="Inbox">Inbox</string>
     <string name="Profile">Profile</string>
     <string name="VoiceBooKing">Voice BooKing</string>
@@ -20,4 +20,9 @@
     <string name="VoiceCommand">Voice Command</string>
     <string name="MyInbox">My Inbox</string>
     <string name="todo2">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mybooking_history">MyBooking history</string>
+    <string name="fast_booking">Fast Booking only for One person Book a ticket singal or return</string>
+    <string name="platform_ticket">Platform ticket only</string>
 </resources>
