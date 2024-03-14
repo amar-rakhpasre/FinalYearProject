@@ -1,16 +1,14 @@
 package com.example.finalyearproject.java;
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
+        import androidx.appcompat.app.AppCompatActivity;
+        import androidx.fragment.app.Fragment;
+        import androidx.fragment.app.FragmentManager;
+        import androidx.fragment.app.FragmentTransaction;
 
-import android.annotation.SuppressLint;
-import android.os.Bundle;
+        import android.os.Bundle;
 
-import com.example.finalyearproject.R;
-import com.example.finalyearproject.databinding.ActivityHomePageBinding;
+        import com.example.finalyearproject.R;
+        import com.example.finalyearproject.databinding.ActivityHomePageBinding;
 
 interface FragmentNavigationListener {
     void navigateTo(Fragment fragment);
@@ -20,7 +18,6 @@ public class HomePage_Activity extends AppCompatActivity implements FragmentNavi
 
     ActivityHomePageBinding binding;
 
-    @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,3 +53,4 @@ public class HomePage_Activity extends AppCompatActivity implements FragmentNavi
         fragmentTransaction.commit();
     }
 }
+

@@ -9,11 +9,530 @@
     tools:context=".java.UsingMapFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Mumbai Local Train Map"
-        android:gravity="center"
-        android:textSize="50sp"/>
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginBottom="15dp"
+            android:columnCount="4"
+            android:rowCount="7">
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart0"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart1"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart2"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart3"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart4"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart5"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart6"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart7"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart8"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart9"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart10"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart11"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart12"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart13"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart14"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart15"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart16"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart17"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart18"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart19"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart20"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart21"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart22"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart23"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart24"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart25"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart26"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="90dp"
+                android:layout_width="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapPart27"
+                        android:src="@drawable/ic_launcher_background">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+
+
+    </RelativeLayout>
 
 </FrameLayout>

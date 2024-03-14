@@ -9,27 +9,28 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.finalyearproject.databinding.ActivityMainBinding;
 import com.example.finalyearproject.databinding.ActivityRegisterBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Register_Activity extends AppCompatActivity {
 
     ActivityRegisterBinding binding;
     FirebaseAuth firebaseAuth;
-    FirebaseFirestore firebaseFirestore;
+    DatabaseReference databaseReference; // Reference to Realtime Database
     ProgressDialog progressDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityRegisterBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         firebaseAuth = FirebaseAuth.getInstance();
-        firebaseFirestore= FirebaseFirestore.getInstance();
+        databaseReference = FirebaseDatabase.getInstance().getReference("User"); // Reference to "User" node
         progressDialog = new ProgressDialog(this);
 
         binding.signup.setOnClickListener(new View.OnClickListener() {
@@ -41,35 +42,36 @@ public class Register_Activity extends AppCompatActivity {
                 String password = binding.password.getText().toString();
 
                 progressDialog.show();
-                firebaseAuth.createUserWithEmailAndPassword(email,password)
+                firebaseAuth.createUserWithEmailAndPassword(email, password)
                         .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
                             public void onSuccess(AuthResult authResult) {
-                                Toast.makeText(Register_Activity.this, "Register succesfull", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(Register_Activity.this,Login_Activity.class));
-                            progressDialog.cancel();
+                                Toast.makeText(Register_Activity.this, "Register successful", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(Register_Activity.this, Login_Activity.class));
+                                progressDialog.dismiss();
 
-                            firebaseFirestore.collection("User")
-                                    .document(FirebaseAuth.getInstance().getUid())
-                                    .set(new UserModel(name,number,email));
+                                // Store user details in Realtime Database
+                                String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                                UserModel user = new UserModel(name, number, email); // Create a User object
+                                databaseReference.child(userId).setValue(user); // Save user to database
                             }
-
                         })
                         .addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
                                 Toast.makeText(Register_Activity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                            progressDialog.cancel();
+                                progressDialog.dismiss();
                             }
                         });
 
             }
         });
+
         binding.goToLoginActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Register_Activity.this,Login_Activity.class));
+                startActivity(new Intent(Register_Activity.this, Login_Activity.class));
             }
-    });
-}
+        });
+    }
 }

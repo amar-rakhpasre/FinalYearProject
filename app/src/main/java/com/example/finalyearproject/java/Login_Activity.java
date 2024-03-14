@@ -13,13 +13,16 @@ import com.example.finalyearproject.R;
 import com.example.finalyearproject.databinding.ActivityLoginBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Login_Activity extends AppCompatActivity {
     ActivityLoginBinding binding;
     FirebaseAuth firebaseAuth;
     ProgressDialog progressDialog;
+    Intent nextHomepage;
+    Intent nextResetPassword;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,62 +30,59 @@ public class Login_Activity extends AppCompatActivity {
         setContentView(binding.getRoot());
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
-        Intent nextHomepage = new Intent(Login_Activity.this, HomePage_Activity.class);
+        nextHomepage = new Intent(Login_Activity.this, HomePage_Activity.class);
+        nextResetPassword = new Intent(Login_Activity.this, ForgotPassword_Activity.class);
 
         binding.login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String email = binding.emailAddress.getText().toString().trim();
-                String password = binding.password.getText().toString();
-                progressDialog.show();
-                firebaseAuth.signInWithEmailAndPassword(email,password)
-                        .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                            @Override
-                            public void onSuccess(AuthResult authResult) {
-                                progressDialog.cancel();
-                                Toast.makeText(Login_Activity.this, "Login successful", Toast.LENGTH_SHORT).show();
-                                startActivity(nextHomepage);
-                                finish();
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                progressDialog.cancel();
-                                Toast.makeText(Login_Activity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-                        });
+                // Your login logic here
+                loginUser();
             }
         });
+
         binding.forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String email = binding.emailAddress.getText().toString();
-                progressDialog.setTitle("Sending Email");
-                progressDialog.show();
-                firebaseAuth.sendPasswordResetEmail(email)
-                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void unused) {
-                                progressDialog.cancel();
-                                Toast.makeText(Login_Activity.this, "Email Sent.", Toast.LENGTH_SHORT).show();
-                                
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                progressDialog.cancel();
-                                Toast.makeText(Login_Activity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-                        });
+                // Forgot password logic in forgotPassword activity java
+                startActivity(nextResetPassword);
             }
         });
+
         binding.goToSignUpActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Login_Activity.this, Register_Activity.class));
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        // Check if user is already logged in
+        FirebaseUser currentUser = firebaseAuth.getCurrentUser();
+        if (currentUser != null) {
+            // User is already logged in, skip login activity and go to the homepage
+            startActivity(nextHomepage);
+            finish(); // Prevent going back to the login activity using the back button
+        }
+    }
+
+    private void loginUser() {
+        String email = binding.emailAddress.getText().toString().trim();
+        String password = binding.password.getText().toString();
+        progressDialog.show();
+        firebaseAuth.signInWithEmailAndPassword(email, password)
+                .addOnSuccessListener(authResult -> {
+                    progressDialog.cancel();
+                    Toast.makeText(Login_Activity.this, "Login successful", Toast.LENGTH_SHORT).show();
+                    startActivity(nextHomepage);
+                    finish(); // Prevent going back to the login activity using the back button
+                })
+                .addOnFailureListener(e -> {
+                    progressDialog.cancel();
+                    Toast.makeText(Login_Activity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                });
     }
 }

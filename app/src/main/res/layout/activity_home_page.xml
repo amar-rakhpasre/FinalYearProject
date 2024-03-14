@@ -8,11 +8,13 @@
     android:background="@color/lavender"
     tools:context=".java.HomePage_Activity">
 
+    <!-- This FrameLayout will hold the fragments -->
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <!-- Bottom App Bar with Bottom Navigation Menu -->
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
@@ -31,6 +33,7 @@
             app:menu="@menu/bottom_menu" />
     </com.google.android.material.bottomappbar.BottomAppBar>
 
+    <!-- Floating Action Button anchored to Bottom App Bar -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
