@@ -3,15 +3,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/lavender"
     tools:context=".java.FastBookingFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/fast_booking"
-        android:gravity="center"
-        android:textSize="50sp"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:gravity="center">
 
+        <!-- Western Line Station -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/corner"
+            android:layout_margin="5dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/westernLineStationImage"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/western_coach"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/westernLineStationText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_centerVertical="true"
+                android:text="Western Line"
+                android:padding="10dp"
+                tools:ignore="RtlCompat" />
+        </RelativeLayout>
+
+        <!-- Central Line Station -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/corner"
+            android:layout_margin="5dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/centralLineStationImage"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/central_coach"
+                android:padding="10dp"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/centralLineStationText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_centerVertical="true"
+                android:text="Central Line"
+                android:padding="10dp"
+                tools:ignore="RtlCompat" />
+        </RelativeLayout>
+
+        <!-- Harbour Line Station -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/corner"
+            android:layout_margin="5dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/harbourLineStationImage"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/harbour_coach" />
+
+            <TextView
+                android:id="@+id/harbourLineStationText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_centerVertical="true"
+                android:text="Harbour Line"
+                android:padding="10dp"
+                tools:ignore="RtlCompat" />
+        </RelativeLayout>
+    </LinearLayout>
 </FrameLayout>

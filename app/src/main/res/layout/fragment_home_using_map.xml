@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
             android:layout_marginBottom="15dp"
             android:columnCount="4"
             android:rowCount="7">
