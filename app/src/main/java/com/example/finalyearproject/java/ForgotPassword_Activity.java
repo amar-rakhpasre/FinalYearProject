@@ -64,6 +64,14 @@ public class ForgotPassword_Activity extends AppCompatActivity {
                         });
             }
         });
+
+        binding.goToLoginActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ForgotPassword_Activity.this, Login_Activity.class));
+                finish();
+            }
+        });
     }
 
 }

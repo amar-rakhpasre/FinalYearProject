@@ -25,4 +25,5 @@
     <string name="mybooking_history">MyBooking history</string>
     <string name="fast_booking">Fast Booking only for One person Book a ticket singal or return</string>
     <string name="platform_ticket">Platform ticket only</string>
+    <string name="enter_your_email">Enter your Email</string>
 </resources>

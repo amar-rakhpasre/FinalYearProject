@@ -6,17 +6,26 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
+    android:gravity="center"
     android:background="@color/lavender"
     tools:context=".java.Register_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
 
     <EditText
         android:textSize="20dp"
         android:id="@+id/userName"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
         android:inputType="text"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:padding="10dp"
-        android:background="@drawable/edittext_background"
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_border"
         android:hint="@string/username_hint"/>
 
     <EditText
@@ -26,8 +35,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:background="@drawable/edittext_background"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_border"
         android:hint="@string/phone_hint"/>
 
     <EditText
@@ -36,10 +47,13 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
         android:inputType="text"
-        android:padding="10dp"
-        android:background="@drawable/edittext_background"
-        android:hint="@string/email_hint"/>
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="@string/email_hint"
+        tools:ignore="RtlSymmetry" />
 
     <EditText
         android:textSize="20dp"
@@ -48,8 +62,10 @@
         android:layout_height="50dp"
         android:inputType="textPassword"
         android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:background="@drawable/edittext_background"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_border"
         android:hint="@string/password_hint"/>
 
     <Button
@@ -58,6 +74,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#404EC8"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:text="@string/sign_up"/>
@@ -68,8 +86,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
         android:layout_marginTop="10dp"
         android:text="@string/login_now"
         android:textColor="@color/red"/>
+    </LinearLayout>
 
 </LinearLayout>

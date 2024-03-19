@@ -16,6 +16,7 @@
 
         <!-- Western Line Station -->
         <RelativeLayout
+            android:id="@+id/westernLineStationImage"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:background="@drawable/corner"
@@ -23,7 +24,6 @@
             android:elevation="4dp">
 
             <ImageView
-                android:id="@+id/westernLineStationImage"
                 android:layout_width="wrap_content"
                 android:layout_height="160dp"
                 android:layout_alignParentStart="true"
@@ -37,6 +37,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="bottom"
+                android:textStyle="bold"
+                android:textColor="@color/lavender"
                 android:textAlignment="center"
                 android:textSize="24dp"
                 android:layout_centerVertical="true"
@@ -47,6 +49,7 @@
 
         <!-- Central Line Station -->
         <RelativeLayout
+            android:id="@+id/centralLineStationImage"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:background="@drawable/corner"
@@ -54,7 +57,6 @@
             android:elevation="4dp">
 
             <ImageView
-                android:id="@+id/centralLineStationImage"
                 android:layout_width="wrap_content"
                 android:layout_height="160dp"
                 android:layout_alignParentStart="true"
@@ -70,6 +72,8 @@
                 android:textAlignment="center"
                 android:textSize="24dp"
                 android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="@color/lavender"
                 android:text="Central Line"
                 android:padding="10dp"
                 tools:ignore="RtlCompat" />
@@ -77,6 +81,7 @@
 
         <!-- Harbour Line Station -->
         <RelativeLayout
+            android:id="@+id/harbourLineStationImage"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:background="@drawable/corner"
@@ -84,7 +89,6 @@
             android:elevation="4dp">
 
             <ImageView
-                android:id="@+id/harbourLineStationImage"
                 android:layout_width="wrap_content"
                 android:layout_height="160dp"
                 android:layout_alignParentStart="true"
@@ -102,9 +106,23 @@
                 android:textAlignment="center"
                 android:textSize="24dp"
                 android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="@color/lavender"
                 android:text="Harbour Line"
                 android:padding="10dp"
                 tools:ignore="RtlCompat" />
         </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select your destination routes."
+            android:background="@drawable/corner"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@color/lavender"
+            android:textSize="20dp"/>
+
     </LinearLayout>
 </FrameLayout>

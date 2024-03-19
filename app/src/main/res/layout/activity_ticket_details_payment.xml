@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".java.TicketDetailsPaymentActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-Ticket Details"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:backgroundTint="#47EDE8"
+        android:background="@drawable/corner"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ticketcard" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/TicketClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="29dp"
+                android:text="Second"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TicketType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="29dp"
+                android:text="Second"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TicketAdultCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="223dp"
+                android:layout_marginTop="29dp"
+                android:text="Second"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TicketChildCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="277dp"
+                android:layout_marginTop="29dp"
+                android:text="Second"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TicketDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="135dp"
+                android:layout_marginTop="55dp"
+                android:text="Second"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TicketNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="55dp"
+                android:text="Second"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Ticket_From"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="82dp"
+                android:text="Second"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TicketValidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="225dp"
+                android:layout_marginTop="82dp"
+                android:text="Second"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TicketPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="305dp"
+                android:layout_marginTop="82dp"
+                android:text="Second"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Ticket_To"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="109dp"
+                android:text="Second"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Ticket_Route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="225dp"
+                android:layout_marginTop="109dp"
+                android:text="Second"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
