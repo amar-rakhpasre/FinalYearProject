@@ -110,7 +110,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Feel free to reach out for any questions or feedback!  
 
 **Amar Dharma Rakhpasre**  
-📧 [your-email@example.com](mailto:your-email@example.com)
+📧 [rakhpasreamar@gmail.com](mailto:rakhpasreamar@gmail.com)
 
 ---
 
