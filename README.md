@@ -31,11 +31,14 @@ Try the app by downloading the APK file from the link below:
 
 ## 🖼️ Screenshots
 
-<img src="https://lavender-recent-caribou-726.mypinata.cloud/ipfs/QmQDyKHUuMYwBjdRPFx11JVn4jhdLBiA3BFdZ6ZhwrLy3t?filename=1.jpg" width="250"> <img src="https://lavender-recent-caribou-726.mypinata.cloud/ipfs/QmeBqu36MZeGh4fDQFGmt5m4KudWrr4BCUNqjwnhTE7By5?filename=10.jpg" width="250"> <img src="path_to_image" width="250"> <img src="https://lavender-recent-caribou-726.mypinata.cloud/ipfs/QmdggTD8n2EEDCrM3caDXofbXMhLvcsA2oNu6ckWdvWZ3H?filename=11.jpg" width="250">
-<img src="path_to_image" width="250"> <img src="path_to_image" width="250"> <img src="path_to_image" width="250"> <img src="path_to_image" width="250">
-<img src="path_to_image" width="250"> <img src="path_to_image" width="250"> <img src="path_to_image" width="250"> <img src="path_to_image" width="250">
-<img src="path_to_image" width="250"> <img src="path_to_image" width="250"> <img src="path_to_image" width="250"> <img src="path_to_image" width="250">
-<img src="path_to_image" width="250"> <img src="path_to_image" width="250"> <img src="path_to_image" width="250"> <img src="path_to_image" width="250">
+<img src="Screenshots/1.jpg" width="250"> <img src="Screenshots/2.jpg" width="250"> <img src="Screenshots/3.jpg" width="250"> <img src="Screenshots/4.jpg" width="250">
+<img src="Screenshots/5.jpg" width="250"> <img src="Screenshots/6.jpg" width="250"> <img src="Screenshots/7.jpg" width="250"> <img src="Screenshots/8.jpg" width="250">
+<img src="Screenshots/9.jpg" width="250"> <img src="Screenshots/10.jpg" width="250"> <img src="Screenshots/11.jpg" width="250"> <img src="Screenshots/12.jpg" width="250">
+<img src="Screenshots/13.jpg" width="250"> <img src="Screenshots/14.jpg" width="250"> <img src="Screenshots/15.jpg" width="250"> <img src="Screenshots/16.jpg" width="250">
+<img src="Screenshots/17.jpg" width="250"> <img src="Screenshots/18.jpg" width="250"> <img src="Screenshots/19.jpg" width="250"> <img src="Screenshots/20.jpg" width="250">
+<img src="Screenshots/21.jpg" width="250"> <img src="Screenshots/22.jpg" width="250"> <img src="Screenshots/23.jpg" width="250"> <img src="Screenshots/24.jpg" width="250">
+<img src="Screenshots/25.jpg" width="250"> <img src="Screenshots/26.jpg" width="250"> <img src="Screenshots/27.jpg" width="250"> <img src="Screenshots/28.jpg" width="250">
+<img src="Screenshots/29.jpg" width="250"> <img src="Screenshots/30.jpg" width="250"> 
 > *Replace these placeholders with actual screenshots from the app.*
 
 ---
