@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner"
+            android:backgroundTint="#47EDE8"
+            android:padding="2dp"
+            android:text="E-Ticket Details"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/corner"
+                android:backgroundTint="@color/aqua"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/tkt"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:elevation="500dp"
+                    android:src="@drawable/ticketcard" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/TVTicketClass"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Second"
+                    android:textColor="@color/darkslateblue"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TVTicketType"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_toEndOf="@+id/TVTicketClass"
+                    android:layout_toRightOf="@id/TVTicketClass"
+                    android:text="Second"
+                    android:textColor="@color/darkslateblue"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TVTicketAdultCount"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_toEndOf="@+id/TVTicketType"
+                    android:layout_toRightOf="@id/TVTicketType"
+                    android:text="Second"
+                    android:textColor="@color/darkslateblue"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TVTicketChildCount"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_toEndOf="@+id/TVTicketAdultCount"
+                    android:layout_toRightOf="@id/TVTicketAdultCount"
+                    android:text="Second"
+                    android:textColor="@color/darkslateblue"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TVTicketDate"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="58dp"
+                    android:text="Second"
+                    android:textColor="@color/darkslateblue"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TVTicketNumber"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="58dp"
+                    android:layout_toEndOf="@+id/TVTicketDate"
+                    android:layout_toRightOf="@id/TVTicketDate"
+                    android:text="Second"
+                    android:textColor="@color/darkslateblue"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TVTicket_From"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="84dp"
+                    android:text="Second"
+                    android:textColor="@color/darkslateblue"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TVTicketValidity"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="84dp"
+                    android:layout_toEndOf="@+id/TVTicket_From"
+                    android:layout_toRightOf="@id/TVTicket_From"
+                    android:text="Second"
+                    android:textColor="@color/darkslateblue"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TVTicketPrice"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="84dp"
+                    android:layout_toEndOf="@+id/TVTicketValidity"
+                    android:layout_toRightOf="@id/TVTicketValidity"
+                    android:text="Second"
+                    android:textColor="@color/darkslateblue"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TVTicket_To"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="111dp"
+                    android:text="Second"
+                    android:textColor="@color/darkslateblue"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TVTicket_Route"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="111dp"
+                    android:layout_toEndOf="@+id/TVTicket_To"
+                    android:layout_toRightOf="@id/TVTicket_To"
+                    android:text="Second"
+                    android:textColor="@color/darkslateblue"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

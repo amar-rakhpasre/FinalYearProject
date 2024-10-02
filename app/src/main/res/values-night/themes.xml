@@ -1,7 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.FinalYearProject" parent="Theme.AppCompat.DayNight.DarkActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="colorPrimaryVariant">@color/lavender</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="Theme.FinalYearProject" parent="Base.Theme.FinalYearProject" />
+
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="cardCornerRadius">15dp</item>
     </style>
 </resources>

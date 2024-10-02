@@ -14,7 +14,7 @@ public class ReturnTicketViewHolder extends RecyclerView.ViewHolder {
     TextView recRoute;
     TextView recClass;
     TextView recTicketType;
-    Button btnReturnTicket;
+    Button btnReturnTicket, btnSingleTicket;
 
     public ReturnTicketViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -23,5 +23,6 @@ public class ReturnTicketViewHolder extends RecyclerView.ViewHolder {
         recClass = itemView.findViewById(R.id.recClass);
         recTicketType = itemView.findViewById(R.id.recTicketType);
         btnReturnTicket = itemView.findViewById(R.id.btnReturnTicket);
+        btnSingleTicket = itemView.findViewById(R.id.btnSingleTicket);
     }
 }

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,29 +14,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalYearProject"
-        tools:targetApi="34" >
+        tools:targetApi="34">
         <activity
-            android:name=".java.TicketDetailsPaymentActivity"
+            android:name=".java.MapTicketPaymentActivity"
             android:exported="false" />
         <activity
-            android:name=".java.HarbourLineStationActivity"
+            android:name=".java.MapChangeJourneyActivity"
             android:exported="false" />
         <activity
-            android:name=".java.CentralLineStationActivity"
+            android:name=".java.NormalTicketDetailsPaymentActivity"
+            android:exported="false" />
+        <activity android:name=".java.MyBookingFragment" />
+        <activity
+            android:name=".SudoOperation.UploadSchedule"
             android:exported="false" />
         <activity
-            android:name=".java.WesternLineStationActivity"
-            android:exported="false"/>
+            android:name=".SudoOperation.SudoActivity"
+            android:exported="false" />
         <activity
             android:name=".java.WallcomeActivity01"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".java.Login_Activity"
@@ -49,6 +54,24 @@
             android:exported="false" />
         <activity
             android:name=".java.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".java.ChangeJourneyDetileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".java.SelectYourDestinationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".java.TicketDetailsPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".java.HarbourLineStationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".java.CentralLineStationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".java.WesternLineStationActivity"
             android:exported="false" />
     </application>
 

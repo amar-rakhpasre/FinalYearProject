@@ -26,4 +26,10 @@
     <string name="fast_booking">Fast Booking only for One person Book a ticket singal or return</string>
     <string name="platform_ticket">Platform ticket only</string>
     <string name="enter_your_email">Enter your Email</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="schedule">Schedule</string>
+    <string name="destination">Destination</string>
+    <string name="source">Source</string>
+    <string name="arrow">arrow</string>
 </resources>

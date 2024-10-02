@@ -1,28 +1,39 @@
 package com.example.finalyearproject.java;
 
-        import androidx.appcompat.app.AppCompatActivity;
-        import androidx.fragment.app.Fragment;
-        import androidx.fragment.app.FragmentManager;
-        import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
-        import android.os.Bundle;
+import android.os.Bundle;
 
-        import com.example.finalyearproject.R;
-        import com.example.finalyearproject.databinding.ActivityHomePageBinding;
+import com.example.finalyearproject.R;
+import com.example.finalyearproject.databinding.ActivityHomePageBinding;
 
 interface FragmentNavigationListener {
     void navigateTo(Fragment fragment);
 }
 
 public class HomePage_Activity extends AppCompatActivity implements FragmentNavigationListener {
-
     ActivityHomePageBinding binding;
+    public String userName, userNumber, userEmail, userPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityHomePageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        // Get user data from intent
+        // Inside onCreate or wherever you get the user data
+//        if (getIntent().hasExtra("user")) {
+//            UserModel user = (UserModel) getIntent().getSerializableExtra("user");
+//            if (user != null) {
+//                // Pass user data to ProfileFragment
+////                ProfileFragment profileFragment = ProfileFragment.newInstance(user.getName(), user.getNumber(), user.getEmail(), user.getPassword());
+////                navigateTo(profileFragment);
+//            }
+//        }
 
         binding.bottomNavigationView.setBackground(null);
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
@@ -37,6 +48,8 @@ public class HomePage_Activity extends AppCompatActivity implements FragmentNavi
             } else if (itemId == R.id.navInBox) {
                 navigateTo(new InboxFragment());
             } else if (itemId == R.id.navProfile) {
+                // Pass user data to ProfileFragment
+//                ProfileFragment profileFragment = ProfileFragment.newInstance(userName, userNumber, userEmail, userPassword);
                 navigateTo(new ProfileFragment());
             }
             return true;
@@ -53,4 +66,3 @@ public class HomePage_Activity extends AppCompatActivity implements FragmentNavi
         fragmentTransaction.commit();
     }
 }
-

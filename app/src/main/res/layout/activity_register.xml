@@ -5,67 +5,91 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
-    android:gravity="center"
-    android:background="@color/lavender"
+    android:gravity="bottom"
+    android:id="@+id/Signup_sceren"
+    android:background="@color/Home3"
     tools:context=".java.Register_Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_4"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="390dp"
         android:orientation="vertical"
-        android:layout_marginTop="100dp">
+        android:gravity="center"
+        android:backgroundTint="@color/lavender"
+        android:background="@drawable/login_corner"
+        android:paddingTop="16dp">
 
     <EditText
         android:textSize="20dp"
         android:id="@+id/userName"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="10dp"
         android:inputType="text"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
+        android:paddingEnd="20dp"
         android:layout_height="50dp"
         android:paddingStart="20dp"
-        android:background="@drawable/edittext_border"
+        android:textColor="@color/black"
+        android:autofillHints="name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/snow"
+        android:textColorHint="@color/black"
         android:hint="@string/username_hint"/>
 
     <EditText
         android:textSize="20dp"
         android:id="@+id/phoneNumber"
         android:inputType="number"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="10dp"
+        android:layout_width="300dp"
         android:paddingStart="20dp"
-        android:background="@drawable/edittext_border"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:autofillHints="phone"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/snow"
+        android:textColorHint="@color/black"
         android:hint="@string/phone_hint"/>
 
     <EditText
         android:textSize="20dp"
         android:id="@+id/emailAddress"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/black"
         android:inputType="text"
+        android:autofillHints="emailAddress"
+        android:paddingEnd="20dp"
         android:paddingStart="20dp"
-        android:background="@drawable/edittext_border"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/snow"
+        android:textColorHint="@color/black"
         android:hint="@string/email_hint"
         tools:ignore="RtlSymmetry" />
 
     <EditText
         android:textSize="20dp"
         android:id="@+id/password"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="50dp"
+        android:textColor="@color/black"
         android:inputType="textPassword"
         android:layout_marginTop="10dp"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="10dp"
+        android:autofillHints="password"
         android:paddingStart="20dp"
-        android:background="@drawable/edittext_border"
+        android:paddingEnd="20dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/snow"
+        android:textColorHint="@color/black"
         android:hint="@string/password_hint"/>
 
     <Button
@@ -73,24 +97,45 @@
         android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#404EC8"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="10dp"
+        android:textColor="#441349"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="#F1CC04"
+        android:elevation="80dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:text="@string/sign_up"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="Already Have? account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
 
     <TextView
         android:textSize="20dp"
         android:id="@+id/goToLoginActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="10dp"
+        android:background="@drawable/corner"
+        android:padding="8dp"
+        android:elevation="20dp"
         android:text="@string/login_now"
-        android:textColor="@color/red"/>
-    </LinearLayout>
+        android:textColor="@color/Home3"
+        android:backgroundTint="#6104F4"/>
+        </LinearLayout>
+
+
+        </LinearLayout>
+
 
 </LinearLayout>

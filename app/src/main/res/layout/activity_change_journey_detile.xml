@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/lavender"
+    android:layout_height="match_parent"
+    tools:context=".java.ChangeJourneyDetileActivity">
+
+    <!-- Checkbox for changing train type -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/sourceStationTextView"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:padding="4dp"
+            android:gravity="center"
+            android:background="@drawable/btn_s"
+            android:backgroundTint="@color/snow"
+            android:text="Source Station"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow"
+            android:contentDescription="@string/arrow"
+            android:layout_gravity="center"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/destinationStationTextView"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:padding="4dp"
+            android:gravity="center"
+            android:background="@drawable/btn_r"
+            android:backgroundTint="@color/snow"
+            android:text="Destination Station"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/checkBoxTrainType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Change Train Type"
+        android:background="@color/darkviolet"
+        android:textColor="@color/sysYellow"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"/>
+
+    <!-- RadioGroup for single and return ticket options -->
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupTicketType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxTrainType"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/radioButtonSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_s"
+            android:backgroundTint="@color/snow"
+            android:text="Single Ticket"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:textColor="@color/black"
+            android:padding="4dp"
+            android:background="@drawable/btn_r"
+            android:backgroundTint="@color/snow"
+            android:text="Return Ticket"/>
+
+    </RadioGroup>
+
+    <!-- Checkbox for changing number of tickets -->
+    <TextView
+        android:id="@+id/checkBoxNumOfTickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkviolet"
+        android:textColor="@color/sysYellow"
+        android:textAlignment="center"
+
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Change Number of Tickets"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupTicketType"/>
+
+    <!-- RadioGroup for ticket quantity options -->
+    <RadioGroup
+        android:id="@+id/radioGroupTicketQuantity"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxNumOfTickets"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_s"
+            android:backgroundTint="@color/snow"
+            android:text="1"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:textColor="@color/black"
+            android:padding="4dp"
+            android:background="@drawable/btn_r"
+            android:backgroundTint="@color/snow"
+            android:text="2"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_s"
+            android:backgroundTint="@color/snow"
+            android:text="3"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_r"
+            android:backgroundTint="@color/snow"
+            android:text="4"/>
+
+    </RadioGroup>
+
+    <!-- Checkbox for changing journey type -->
+    <TextView
+        android:id="@+id/checkBoxJourneyType"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:background="@color/darkviolet"
+        android:textColor="@color/sysYellow"
+        android:layout_height="wrap_content"
+        android:text="Journey Type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupTicketQuantity"/>
+
+    <!-- CheckBox for ordinary journey type -->
+
+    <CheckBox
+        android:id="@+id/checkBoxOrdinary"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="2dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_border"
+        android:backgroundTint="@color/snow"
+        android:padding="4dp"
+        android:text="Ordinary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxJourneyType" />
+
+    <!-- Checkbox for changing class -->
+    <TextView
+        android:id="@+id/checkBoxClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Class"
+        android:textAlignment="center"
+        android:background="@color/darkviolet"
+        android:textColor="@color/sysYellow"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxOrdinary"/>
+
+    <!-- RadioGroup for class options -->
+    <RadioGroup
+        android:id="@+id/radioGroupClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxClass"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonFirstClass"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_s"
+            android:backgroundTint="@color/snow"
+            android:text="First Class"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonSecondClass"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_r"
+            android:backgroundTint="@color/snow"
+            android:text="Second Class"/>
+
+    </RadioGroup>
+
+    <!-- Textview for displaying total fare -->
+
+    <!-- EditText for entering total fare -->
+
+    <!-- Button for pay action -->
+
+    <TextView
+        android:id="@+id/textView2TotalFare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="20dp"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/sysYellow"
+        android:textStyle="bold"
+        android:textColor="@color/lavender"
+        android:text="Total Fare:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupClass" />
+
+    <TextView
+        android:id="@+id/textViewTotalFare"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:paddingStart="25dp"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/aqua"
+        android:textColor="@color/black"
+        android:hint="Total of Fare..."
+        android:inputType="numberDecimal"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2TotalFare"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupClass" />
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/corner"
+        android:backgroundTint="@color/darkorange"
+        android:elevation="80dp"
+        android:padding="20dp"
+        android:text="Confirm"
+        android:textColor="@color/aqua"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2TotalFare"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner"
+        android:backgroundTint="@color/background_color"
+        android:elevation="80dp"
+        android:padding="20dp"
+        android:text="GO Back"
+        android:textColor="@color/aqua"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConfirm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

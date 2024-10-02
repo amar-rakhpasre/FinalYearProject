@@ -16,6 +16,10 @@ import java.util.List;
 public class ReturnTicketAdapter extends RecyclerView.Adapter<ReturnTicketViewHolder> {
     private Context context;
     private List<ReturnTicketModel> returnTicketModelsList;
+    public  void  setFilteredLIst(List<ReturnTicketModel> filteredLIst){
+        this.returnTicketModelsList = filteredLIst;
+        notifyDataSetChanged();
+    }
 
     public ReturnTicketAdapter(Context context, List<ReturnTicketModel> returnTicketModelsList) {
         this.context = context;
@@ -38,6 +42,25 @@ public class ReturnTicketAdapter extends RecyclerView.Adapter<ReturnTicketViewHo
         holder.recTicketType.setText(returnTicketModel.getTicketType());
 
         holder.btnReturnTicket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, TicketDetailsPaymentActivity.class);
+                intent.putExtra("ticketTo", returnTicketModel.getTicket_To());
+                intent.putExtra("ticketRoute", returnTicketModel.getTicket_Route());
+                intent.putExtra("ticketClass", returnTicketModel.getTicketClass());
+                intent.putExtra("ticketType", returnTicketModel.getTicketType());
+                intent.putExtra("ticketPrice", returnTicketModel.getTicketPrice());
+                intent.putExtra("ticketDate", returnTicketModel.getTicketDate());
+                intent.putExtra("ticketNumber", returnTicketModel.getTicketNumber());
+                intent.putExtra("ticketAdultCount", returnTicketModel.getTicketAdultCount());
+                intent.putExtra("ticketChildCount", returnTicketModel.getTicketChildCount());
+                intent.putExtra("ticketValidity", returnTicketModel.getTicketValidity());
+                intent.putExtra("ticketFrom", returnTicketModel.getTicket_From());
+                context.startActivity(intent);
+            }
+        });
+
+        holder.btnSingleTicket.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, TicketDetailsPaymentActivity.class);

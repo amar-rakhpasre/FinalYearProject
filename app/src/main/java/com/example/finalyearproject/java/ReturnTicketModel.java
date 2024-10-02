@@ -78,18 +78,5 @@ public class ReturnTicketModel {
     }
 
     // Add data for multiple stations here
-    public static List<ReturnTicketModel> getSampleStationData() {
-        List<ReturnTicketModel> stationList = new ArrayList<>();
 
-        // Add data for each station
-        stationList.add(new ReturnTicketModel("Second", "ORDINARY", 1, 0, "2024-02-17", 123456, "Mumbai", "3 HOUR", 10, "Churchgate Station", "Western Line"));
-        stationList.add(new ReturnTicketModel("Second", "ORDINARY", 1, 0, "2024-02-17", 123457, "Mumbai", "3 HOUR", 10, "Marine Lines Station", "Western Line"));
-        stationList.add(new ReturnTicketModel("Second", "ORDINARY", 1, 0, "2024-02-17", 123458, "Mumbai", "3 HOUR", 10, "Charni Road Station", "Western Line"));
-        stationList.add(new ReturnTicketModel("Second", "ORDINARY", 1, 0, "2024-02-17", 123459, "Mumbai", "3 HOUR", 10, "Grant Road Station", "Western Line"));
-        stationList.add(new ReturnTicketModel("Second", "ORDINARY", 2, 1, "2024-02-17", 123528, "Mumbai", "3 HOUR", 10, "Mumbai Central", "Western Line"));
-        stationList.add(new ReturnTicketModel("Second", "ORDINARY", 1, 0, "2024-02-18", 124512, "Mumbai", "3 HOUR", 10, "Mahalaxmi", "Western Line"));
-        // Add more stations as needed
-
-        return stationList;
-    }
 }
