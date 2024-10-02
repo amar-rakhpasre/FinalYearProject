@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".SudoOperation.UploadSchedule">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="50dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/lavender"
+        android:background="@drawable/login_corner"
+        android:paddingTop="16dp">
+
+    <EditText
+        android:textSize="20dp"
+        android:id="@+id/addTO"
+        android:inputType="text"
+        android:layout_width="300dp"
+        android:paddingEnd="20dp"
+        android:layout_height="50dp"
+        android:elevation="15dp"
+        android:textColorHint="#404040"
+        android:paddingStart="20dp"
+        android:autofillHints="name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_border"
+        android:backgroundTint="#F4F6F0"
+        android:textColor="#000000"
+        android:hint="Add Destination"/>
+
+    <EditText
+        android:textSize="20dp"
+        android:id="@+id/addFrom"
+        android:inputType="text"
+        android:layout_width="300dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#404040"
+        android:autofillHints="phone"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#F4F6F0"
+        android:textColor="#000000"
+        android:background="@drawable/edittext_border"
+        android:hint="Add Origen"/>
+
+    <EditText
+        android:textSize="20dp"
+        android:id="@+id/addTime"
+        android:layout_width="300dp"
+        android:textColorHint="#404040"
+        android:layout_height="50dp"
+        android:backgroundTint="#F4F6F0"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:inputType="text"
+        android:autofillHints="emailAddress"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Add Timeing"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:textSize="20dp"
+        android:id="@+id/addPaltform"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#F4F6F0"
+        android:textColor="#000000"
+        android:textColorHint="#404040"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:autofillHints="password"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Add Paltform Number"/>
+
+        <EditText
+            android:textSize="20dp"
+            android:id="@+id/addTrainNum"
+            android:inputType="text"
+            android:layout_width="300dp"
+            android:paddingEnd="20dp"
+            android:layout_height="50dp"
+            android:elevation="15dp"
+            android:textColorHint="#404040"
+            android:paddingStart="20dp"
+            android:autofillHints="name"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_border"
+            android:backgroundTint="#F4F6F0"
+            android:textColor="#000000"
+            android:hint="Add Train Number"/>
+
+
+
+    <Button
+        android:textSize="20dp"
+        android:id="@+id/UploadSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#441349"
+        android:background="#F1CC04"
+        android:elevation="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="UpLoad"/>
+
+</LinearLayout>
+
+    </LinearLayout>

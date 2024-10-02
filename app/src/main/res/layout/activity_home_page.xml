@@ -5,41 +5,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lavender"
+    android:background="@color/skyblue"
     tools:context=".java.HomePage_Activity">
 
+    <!-- This FrameLayout will hold the fragments -->
     <FrameLayout
         android:id="@+id/frame_layout"
+        android:backgroundTint="@color/lavender"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <!-- Bottom App Bar with Bottom Navigation Menu -->
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:backgroundTint="@color/sysYellow"
         android:layout_gravity="bottom"
-        app:fabCradleMargin="10dp"
         app:fabCradleRoundedCornerRadius="50dp"
-        app:backgroundTint="@color/white">
+        app:backgroundTint="@color/sysBlack">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:background="@android:color/transparent"
+            android:backgroundTint="@color/black"
+            app:backgroundTint="@color/black"
             app:labelVisibilityMode="labeled"
             app:menu="@menu/bottom_menu" />
     </com.google.android.material.bottomappbar.BottomAppBar>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/baseline_settings_voice_24"
-        app:layout_anchor="@id/bottomAppBar"
-        app:tint="@color/lavender"
-        android:background="@color/white"
-        app:maxImageSize="40dp"
-        android:contentDescription="@string/todo2" />
+    <!-- Floating Action Button anchored to Bottom App Bar -->
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="444445dp"-->
+<!--        app:layout_anchor="@id/bottomAppBar"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:background="@color/white"-->
+<!--        app:maxImageSize="50dp"-->
+<!--        android:contentDescription="@string/todo2" />-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

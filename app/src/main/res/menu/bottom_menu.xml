@@ -13,8 +13,8 @@
 
     <item
         android:id="@+id/navVoiceCommand"
-        android:title="@string/voice_booking"
-        android:enabled="false"/>
+        android:title="@string/schedule"
+        android:icon="@drawable/baseline_train_24"/>
 
     <item
         android:id="@+id/navInBox"

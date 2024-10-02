@@ -7,11 +7,132 @@
     tools:context=".java.PlatformTicketFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/platform_ticket"
-        android:gravity="center"
-        android:textSize="50sp"/>
+        android:background="@drawable/withe_backround_profie"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        tools:context=".MainActivity">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Platform Ticket Booking"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:backgroundTint="#48D9F3"
+            android:background="@drawable/login_corner"
+            android:textSize="25dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/darkviolet"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/searchbar2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_border"
+                android:backgroundTint="@color/lavender"
+                android:hint="Search...Platform"
+                android:inputType="text"
+                android:padding="15dp"
+                android:paddingStart="26dp"
+                android:paddingEnd="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="Select Ticket Count"
+                android:textColor="#010630"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:backgroundTint="@color/login_page_color"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/C1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_s"
+                    android:backgroundTint="@color/lawngreen"
+                    android:padding="15dp"
+                    android:text="1" />
+
+                <CheckBox
+                    android:id="@+id/C2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_r"
+                    android:backgroundTint="@color/lawngreen"
+                    android:padding="15dp"
+                    android:text="2" />
+
+                <CheckBox
+                    android:id="@+id/C3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn_s"
+                    android:backgroundTint="@color/lawngreen"
+                    android:padding="15dp"
+                    android:text="3" />
+
+                <CheckBox
+                    android:id="@+id/C4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn_r"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/lawngreen"
+                    android:padding="15dp"
+                    android:text="4" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cjourney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/edittext_background"
+                android:backgroundTint="@color/sysCyan"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:elevation="50dp"
+                android:layout_margin="20dp"
+                android:text="BOOK"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </FrameLayout>

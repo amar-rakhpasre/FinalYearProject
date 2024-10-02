@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/recCard"
+        app:cardElevation="8dp"
+        android:backgroundTint="#00FFE1"
+        app:cardCornerRadius="16dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_marginTop="14dp"
+            android:paddingStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="5.5">
+
+            <TextView
+                android:id="@+id/recStationTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mumbai"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14dp"/>
+            <TextView
+                android:id="@+id/recRoute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Via:------"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"/>
+            <TextView
+                android:id="@+id/recClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLASS: Second"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="12dp"/>
+            <TextView
+                android:id="@+id/recTicketType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="TRAIN TYPE: ORDINARY"
+                android:textStyle="bold"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="185dp"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:padding="2dp"
+            android:background="@drawable/edittext_border"
+            android:orientation="horizontal"
+            android:weightSum="5.5">
+
+            <Button
+                android:id="@+id/btnSingleTicket"
+                android:layout_width="77dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="#3B3EE4"
+                android:background="@drawable/btn_s"
+                android:text="JOURNEY\n fare: 10"/>
+            <Button
+                android:id="@+id/btnReturnTicket"
+                android:layout_width="77dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="#F1105F"
+                android:layout_height="90dp"
+                android:background="@drawable/btn_r"
+                android:text="RETURN\nFARE: 20"
+                android:layout_marginStart="2dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
